@@ -2,18 +2,18 @@ import './App.css';
 import Footer from './components/shared/Footer';
 import Navbar from './components/shared/Navbar';
 import Snackbar from './components/shared/Snackbar';
-import Carousel from './components/ui/Carousel';
+// import Carousel from './components/ui/Carousel';
 
 function App() {
-  const heroContent = [
-    { imgUrl: '/img/hero.svg', alt: 'Hero 1', key: 1 },
-    { imgUrl: '/img/hero-2.png', alt: 'Hero 2', key: 2 },
-  ];
+  // const heroContent = [
+  //   { imgUrl: '/img/hero.svg', alt: 'Hero 1', key: 1 },
+  //   { imgUrl: '/img/hero-2.png', alt: 'Hero 2', key: 2 },
+  // ];
   return (
     <>
       <Snackbar text="Click and Collect is now available. Complimentary shipping over $400." />
       <Navbar />
-      <Carousel image={heroContent} />
+      {/* <Carousel image={heroContent} /> */}
       <section className="hero hero-top">
         <div className="hero-content">
           <small>Treat Your Body Like Your Face</small>
