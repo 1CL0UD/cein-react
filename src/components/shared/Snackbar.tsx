@@ -3,7 +3,7 @@ interface Props {
 }
 const Snackbar = ({ text }: Props) => {
   return (
-    <div className="snackbar pt-4">
+    <div className="snackbar pt-4 px-md-4">
       <p>{text}</p>
     </div>
   );
