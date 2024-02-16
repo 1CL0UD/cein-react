@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import LayoutShop from './pages/shop/LayoutShop.tsx';
+import SkinCarePage from './pages/shop/skin-care/SkinCarePage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/shop',
-    element: <LayoutShop />,
+    path: '/shop/skin-care',
+    element: <SkinCarePage />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
