@@ -342,4 +342,14 @@ footer {
   font-size: 2rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+.search-modal {
+  margin-top: 8rem;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
+}
+
+.min-vh-80 {
+  min-height: 86vh;
+}

@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
+import LayoutShop from './pages/shop/LayoutShop.tsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+  },
+  {
+    path: '/shop',
+    element: <LayoutShop />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
