@@ -4,6 +4,16 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary px-3 py-0">
       <div className="container-fluid">
+        <a className="navbar-brand justify-item order-1 m-0" href="#">
+          <img src="/img/Logo.svg" alt="Cein" width="80" height="64" />
+        </a>
+        <div className="d-flex flex-row align-items-center justify-content-center order-3 gap-4">
+          <i className="bi bi-search d-md-block d-none"></i>
+          <LanguageSelector />
+          <i className="bi bi-heart"></i>
+          <i className="bi bi-person d-md-block d-none"></i>
+          <i className="bi bi-cart"></i>
+        </div>
         <button
           className="navbar-toggler"
           type="button"
@@ -38,17 +48,6 @@ const Header = () => {
               </a>
             </li>
           </ul>
-        </div>
-
-        <a className="navbar-brand justify-item m-0" href="#">
-          <img src="/img/Logo.svg" alt="Cein" width="80" height="64" />
-        </a>
-        <div className="d-flex flex-row align-items-center justify-content-center gap-4">
-          <i className="bi bi-search d-md-block d-none"></i>
-          <LanguageSelector />
-          <i className="bi bi-heart"></i>
-          <i className="bi bi-person d-md-block d-none"></i>
-          <i className="bi bi-cart"></i>
         </div>
       </div>
     </nav>
