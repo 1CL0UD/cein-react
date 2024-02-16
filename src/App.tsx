@@ -1,6 +1,6 @@
 import './App.css';
 import Footer from './components/shared/Footer';
-import Navbar from './components/shared/Navbar';
+import Header from './components/shared/Header';
 import Snackbar from './components/shared/Snackbar';
 // import Carousel from './components/ui/Carousel';
 
@@ -12,9 +12,9 @@ function App() {
   return (
     <>
       <Snackbar text="Click and Collect is now available. Complimentary shipping over $400." />
-      <Navbar />
+      <Header />
       {/* <Carousel image={heroContent} /> */}
-      <section className="hero hero-top">
+      <section className="container-fluid hero hero-top">
         <div className="hero-content">
           <small>Treat Your Body Like Your Face</small>
           <h1 className="fs-1">Highly Effective Body Care</h1>
@@ -28,7 +28,7 @@ function App() {
           </button>
         </div>
       </section>
-      <section className="product-highlight">
+      <section className="container-fluid product-highlight">
         <div className="col-md row m-auto py-4">
           <div className="row col-md-6 my-auto">
             <img
@@ -54,7 +54,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="carousel">
+      <section className="container-fluid carousel">
         <p>Parsley Seed Skin Care</p>
         <h1>Supreme Skin Fortification</h1>
         <p>
@@ -104,7 +104,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="hero hero-2nd">
+      <section className="container-fluid hero hero-2nd">
         <div className="hero-content">
           <small>Revitalize Your Body</small>
           <h1 className="fs-1">Effective Ingredients for Visible Results</h1>
@@ -121,7 +121,7 @@ function App() {
           </button>
         </div>
       </section>
-      <section className="carousel">
+      <section className="container-fluid carousel">
         <p>Pure Radiance</p>
         <h1>Natural Face Care for Visible Transformation</h1>
         <p>
@@ -172,14 +172,14 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="quotes">
+      <section className="container-fluid quotes">
         <h2 className="fs-2">
           Countless answers lie within nature's genius, awaiting our exploration
           and engagement.
         </h2>
         <h3 className="fs-3">THE FUTURE OF NATURAL SKINCARE</h3>
       </section>
-      <section className="user-voice">
+      <section className="container-fluid user-voice">
         <h1>User Voice</h1>
         <div className="user-voice-grid">
           <img src="/img/hero-2.png" alt="" />
@@ -191,7 +191,7 @@ function App() {
         </div>
         <button className="user-voice-more">Read More</button>
       </section>
-      <section className="carousel">
+      <section className="container-fluid carousel">
         <p>Insights into Health and Well-being</p>
         <h1>Our Journal</h1>
         <div className="media-scroller snaps-inline">
