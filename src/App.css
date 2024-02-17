@@ -224,7 +224,7 @@ body {
   grid-template-rows: min-content;
   gap: 1rem;
 }
-.carousel .media-element .atc-button {
+.media-element .atc-button {
   background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
   border: none;
@@ -239,7 +239,7 @@ body {
 .carousel .media-element:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.carousel .media-element:hover .atc-button {
+.media-element:hover .atc-button {
   visibility: visible;
 }
 .carousel .snaps-inline {
