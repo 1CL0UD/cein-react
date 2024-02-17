@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg shadow bg-body-tertiary px-3 py-0">
       <div className="container-fluid">
-        <a className="navbar-brand justify-item order-1 m-0" href="#">
+        <a className="navbar-brand justify-item order-1 m-0" href="/">
           <img src="/img/Logo.svg" alt="Cein" width="80" height="64" />
         </a>
         <div className="d-flex flex-row align-items-center justify-content-center order-3 gap-4">
@@ -37,7 +37,7 @@ const Header = () => {
         <div className="collapse navbar-collapse flex-grow-0" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/shop/skin-care">
                 Shop
               </a>
             </li>
