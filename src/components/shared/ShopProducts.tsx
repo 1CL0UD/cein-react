@@ -1,0 +1,45 @@
+import ProductCard from '../ui/ProductCard';
+
+interface Props {
+  products: Products[];
+}
+
+interface Products {
+  id: number;
+  brand: string;
+  name: string;
+  capacity: string;
+  price: number;
+  price_sign: string;
+  currency: string;
+  description: string;
+  category: string;
+  image_link: string;
+}
+
+const ShopProducts = ({ products }: Props) => {
+  return (
+    <div className="container-fluid carousel">
+      <div className="row">
+        {products.map((item) => (
+          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+            <ProductCard
+              id={item.id}
+              brand={item.brand}
+              name={item.name}
+              capacity={item.capacity}
+              price={item.price}
+              price_sign={item.price_sign}
+              currency={item.currency}
+              description={item.description}
+              category={item.category}
+              image_link={item.image_link}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ShopProducts;

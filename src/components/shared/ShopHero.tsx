@@ -3,7 +3,7 @@ const ShopHero = () => {
     <div className="container-fluid shop-hero px-0 py-5">
       <div className="container-fluid px-5 py-4">
         <div className="row my-auto">
-          <div className="col-4">
+          <div className="col-md-4">
             <h1 className="fs-1">Skin Care</h1>
             <p className="fs-6">
               The skin is constantly changing, influenced by the environment,
