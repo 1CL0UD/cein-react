@@ -4,6 +4,7 @@ import App from './App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import SkinCarePage from './pages/shop/skin-care/SkinCarePage.tsx';
+import ProductPage from './pages/products/ProductPage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: '/shop/skin-care',
     element: <SkinCarePage />,
+  },
+  {
+    path: '/products/product-1',
+    element: <ProductPage />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
