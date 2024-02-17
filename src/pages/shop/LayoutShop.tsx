@@ -1,17 +1,30 @@
 import { ReactNode } from 'react';
-import Footer from '../../components/shared/Footer';
-import Header from '../../components/shared/Header';
+import ShopHero from '../../components/shared/ShopHero';
+import UnderlineTabs from '../../components/shared/UnderlineTabs';
+import RootLayout from '../RootLayout';
 
 interface Props {
   children: ReactNode;
 }
 const LayoutShop = ({ children }: Props) => {
+  const skinCareTabsList = [
+    'Cleanse',
+    'Exfoliate',
+    'Treat & Masque',
+    'Tone',
+    'Hydrate',
+    'Eyes & Ups',
+    'Sun Care',
+    'Shave',
+  ];
   return (
-    <>
-      <Header />
+    <RootLayout>
+      <ShopHero />
+      <div className="container-fluid">
+        <UnderlineTabs tabsList={skinCareTabsList} />
+      </div>
       {children}
-      <Footer />
-    </>
+    </RootLayout>
   );
 };
 
