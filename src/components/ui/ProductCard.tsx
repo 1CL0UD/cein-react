@@ -17,7 +17,11 @@ const ProductCard = ({
   image_link,
 }: Props) => {
   return (
-    <div className="media-element p-3 rounded-3" key={id}>
+    <a
+      className="media-element text-black p-3 rounded-3"
+      href="/products/product-1"
+      key={id}
+    >
       <img src={image_link} alt="product-1" />
       <p className="product-name">{name}</p>
       <p>A Vitamin C-rich layering serum</p>
@@ -27,7 +31,7 @@ const ProductCard = ({
         {price}
       </p>
       <AddToCartButton />
-    </div>
+    </a>
   );
 };
 
