@@ -1,3 +1,5 @@
+import AddToCartButton from './AddToCartButton';
+
 export interface Props {
   id: number;
   name: string;
@@ -24,7 +26,7 @@ const ProductCard = ({
         {price_sign}
         {price}
       </p>
-      <button className="atc-button">Add to your cart</button>
+      <AddToCartButton />
     </div>
   );
 };
