@@ -228,9 +228,12 @@ body {
   grid-template-rows: min-content;
   gap: 1rem;
 }
+
 .media-element .atc-button {
-  background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
+}
+.atc-button {
+  background-color: rgba(0, 0, 0, 0.7);
   border: none;
   color: white;
   padding: 1rem 0;
