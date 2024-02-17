@@ -25,14 +25,10 @@ const ShopProducts = ({ products }: Props) => {
           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
             <ProductCard
               id={item.id}
-              brand={item.brand}
               name={item.name}
               capacity={item.capacity}
               price={item.price}
               price_sign={item.price_sign}
-              currency={item.currency}
-              description={item.description}
-              category={item.category}
               image_link={item.image_link}
             />
           </div>
