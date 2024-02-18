@@ -1,3 +1,4 @@
+import Accordion from '../../components/ui/Accordion';
 import AddToCartButton from '../../components/ui/AddToCartButton';
 import ProductDescription from '../../components/ui/ProductDescription';
 import LayoutProducts from './LayoutProducts';
@@ -43,6 +44,20 @@ const ProductPage = () => {
         <div className="row text-center py-5">
           <p className="fs-5 fw-lighter mb-1">Skin Routine</p>
           <p className="fs-4 fw-semibold">Gentle Care for Delicate Skin</p>
+        </div>
+      </div>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-6 bg-snow-drift p-0">
+            <Accordion />
+          </div>
+          <div className="col-6 p-0">
+            <img
+              src="/img/products/product-acc.png"
+              className="w-100 object-fit-cover"
+              alt="Product Accordion"
+            />
+          </div>
         </div>
       </div>
     </LayoutProducts>
