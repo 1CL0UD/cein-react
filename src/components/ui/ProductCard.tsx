@@ -24,6 +24,7 @@ const ProductCard = ({
     >
       <img src={image_link} alt="product-1" />
       <p className="product-name">{name}</p>
+      <i className="bi bi-heart text-end"></i>
       <p>A Vitamin C-rich layering serum</p>
       <p>{capacity}</p>
       <p>
