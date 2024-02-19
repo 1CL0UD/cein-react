@@ -1,5 +1,5 @@
 import Accordion from '../../components/ui/Accordion';
-import AddToCartButton from '../../components/ui/AddToCartButton';
+import Button from '../../components/ui/Button';
 import Comments from '../../components/ui/Comments';
 import ProductCard from '../../components/ui/ProductCard';
 import ProductDescription from '../../components/ui/ProductDescription';
@@ -33,7 +33,7 @@ const ProductPage = () => {
               normal, sensitive, or mature skin.
             </p>
             <h3 className="fs-3">$32</h3>
-            <AddToCartButton />
+            <Button>Add to Cart</Button>
             <div className="d-flex flex-row gap-2 my-4">
               <i className="bi bi-heart"></i>
               <p className="fs-6">Save to Cabinet</p>
