@@ -2,6 +2,8 @@ import './App.css';
 import Footer from './components/shared/Footer';
 import Header from './components/shared/Header';
 import Snackbar from './components/shared/Snackbar';
+import ProductCard from './components/ui/ProductCard';
+import skinCare from './data/shop/skin-care';
 // import Carousel from './components/ui/Carousel';
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
   //   { imgUrl: '/img/hero.svg', alt: 'Hero 1', key: 1 },
   //   { imgUrl: '/img/hero-2.png', alt: 'Hero 2', key: 2 },
   // ];
+  const products = skinCare.data;
   return (
     <>
       <Snackbar text="Click and Collect is now available. Complimentary shipping over $400." />
@@ -62,46 +65,16 @@ function App() {
           for all skin types.
         </p>
         <div className="media-scroller snaps-inline">
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-1.png" alt="product-1" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-1.png" alt="product-1" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-1.png" alt="product-1" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-1.png" alt="product-1" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-1.png" alt="product-1" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
+          {products.map((item) => (
+            <ProductCard
+              id={item.id}
+              name={item.name}
+              capacity={item.capacity}
+              price={item.price}
+              price_sign={item.price_sign}
+              image_link={item.image_link}
+            />
+          ))}
         </div>
       </section>
       <section className="container-fluid hero hero-2nd">
@@ -130,46 +103,16 @@ function App() {
           provide visible results —naturally.
         </p>
         <div className="media-scroller snaps-inline">
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-2.png" alt="product-2" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-2.png" alt="product-2" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-2.png" alt="product-2" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-2.png" alt="product-2" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
-          <div className="media-element">
-            <img src="/img/skin-carousel/product-2.png" alt="product-2" />
-            <p className="product-name">Lucent Facial Concentrate</p>
-            <p>A Vitamin C-rich layering serum</p>
-            <p>60 ml</p>
-            <p>$94</p>
-            <button className="atc-button">Add to your cart</button>
-          </div>
+          {products.map((item) => (
+            <ProductCard
+              id={item.id}
+              name={item.name}
+              capacity={item.capacity}
+              price={item.price}
+              price_sign={item.price_sign}
+              image_link={item.image_link}
+            />
+          ))}
         </div>
       </section>
       <section className="container-fluid quotes">
