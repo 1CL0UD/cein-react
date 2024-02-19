@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './components/shared/Footer';
 import Header from './components/shared/Header';
 import Snackbar from './components/shared/Snackbar';
+import JournalCard from './components/ui/JournalCard';
 import ProductCard from './components/ui/ProductCard';
 import skinCare from './data/shop/skin-care';
 // import Carousel from './components/ui/Carousel';
@@ -12,6 +13,9 @@ function App() {
   //   { imgUrl: '/img/hero-2.png', alt: 'Hero 2', key: 2 },
   // ];
   const products = skinCare.data;
+  const journal = Array.from({ length: 5 }, (_, index) => (
+    <JournalCard key={index} />
+  ));
   return (
     <>
       <Snackbar text="Click and Collect is now available. Complimentary shipping over $400." />
@@ -137,62 +141,7 @@ function App() {
       <section className="container-fluid carousel">
         <p>Insights into Health and Well-being</p>
         <h1>Our Journal</h1>
-        <div className="media-scroller snaps-inline">
-          <div className="media-element journal">
-            <img src="/img/journal/journal-1.png" alt="product-2" />
-            <p>SKIN CONCIERGE</p>
-            <h4>Distinguishing Mineral Sunscreens from Chemical Sunscreens</h4>
-            <button className="read-more-btn">
-              Read More
-              <i className="bi bi-chevron-right"></i>
-            </button>
-          </div>
-          <div className="media-element journal">
-            <img src="/img/journal/journal-1.png" alt="product-2" />
-            <p>SKIN CONCIERGE</p>
-            <h4>Distinguishing Mineral Sunscreens from Chemical Sunscreens</h4>
-            <button className="read-more-btn">
-              Read More
-              <i className="bi bi-chevron-right"></i>
-            </button>
-          </div>
-          <div className="media-element journal">
-            <img src="/img/journal/journal-1.png" alt="product-2" />
-            <p>SKIN CONCIERGE</p>
-            <h4>Distinguishing Mineral Sunscreens from Chemical Sunscreens</h4>
-            <button className="read-more-btn">
-              Read More
-              <i className="bi bi-chevron-right"></i>
-            </button>
-          </div>
-          <div className="media-element journal">
-            <img src="/img/journal/journal-1.png" alt="product-2" />
-            <p>SKIN CONCIERGE</p>
-            <h4>Distinguishing Mineral Sunscreens from Chemical Sunscreens</h4>
-            <button className="read-more-btn">
-              Read More
-              <i className="bi bi-chevron-right"></i>
-            </button>
-          </div>
-          <div className="media-element journal">
-            <img src="/img/journal/journal-1.png" alt="product-2" />
-            <p>SKIN CONCIERGE</p>
-            <h4>Distinguishing Mineral Sunscreens from Chemical Sunscreens</h4>
-            <button className="read-more-btn">
-              Read More
-              <i className="bi bi-chevron-right"></i>
-            </button>
-          </div>
-          <div className="media-element journal">
-            <img src="/img/journal/journal-1.png" alt="product-2" />
-            <p>SKIN CONCIERGE</p>
-            <h4>Distinguishing Mineral Sunscreens from Chemical Sunscreens</h4>
-            <button className="read-more-btn">
-              Read More
-              <i className="bi bi-chevron-right"></i>
-            </button>
-          </div>
-        </div>
+        <div className="media-scroller snaps-inline">{journal}</div>
       </section>
       <Footer />
     </>
