@@ -21,7 +21,9 @@ const Header = () => {
           <LanguageSelector />
           <i className="bi bi-heart"></i>
           <i className="bi bi-person d-md-block d-none"></i>
-          <i className="bi bi-cart"></i>
+          <a href="/cart">
+            <i className="bi bi-cart"></i>
+          </a>
         </div>
         <button
           className="navbar-toggler"
