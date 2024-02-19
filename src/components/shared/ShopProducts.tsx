@@ -19,10 +19,10 @@ interface Products {
 
 const ShopProducts = ({ products }: Props) => {
   return (
-    <div className="container-fluid carousel">
+    <div className="container-fluid carousel p-0">
       <div className="row">
         {products.map((item) => (
-          <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div className="col-lg-3 col-md-4 col-6">
             <ProductCard
               id={item.id}
               name={item.name}
