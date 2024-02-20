@@ -285,7 +285,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 12rem;
+  padding: 0 8rem;
 }
 
 @media (max-width: 48rem) {
@@ -342,7 +342,6 @@ body {
 footer {
   background-color: #333333;
   color: white;
-  margin-top: 4rem;
   padding: 4rem 2rem 2rem;
 }
 
