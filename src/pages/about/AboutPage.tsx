@@ -1,3 +1,4 @@
+import Quotes from '../../components/shared/Quotes';
 import ButtonWithIcon from '../../components/ui/ButtonWithIcon';
 import RootLayout from '../RootLayout';
 
@@ -59,7 +60,7 @@ const AboutPage = () => {
             />
           </div>
         </div>
-        <div className="row px-5">
+        <div className="row px-5 mb-5">
           <img
             src="/img/about-us/about-us-large.png"
             alt="About Us Large"
@@ -67,6 +68,11 @@ const AboutPage = () => {
           />
         </div>
       </div>
+      <Quotes subtext="THE FUTURE OF NATURAL SKINCARE">
+        Our formulations are rooted in nature's most valuable raw materials,
+        enhanced with modern technologies to ensure optimal results for your
+        skin.
+      </Quotes>
     </RootLayout>
   );
 };
