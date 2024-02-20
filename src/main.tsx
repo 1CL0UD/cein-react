@@ -7,6 +7,7 @@ import SkinCarePage from './pages/shop/skin-care/SkinCarePage.tsx';
 import ProductPage from './pages/products/ProductPage.tsx';
 import CartPage from './pages/cart/CartPage.tsx';
 import Login from './pages/authentication/Login.tsx';
+import Register from './pages/authentication/Register.tsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <Login />,
+  },
+  {
+    path: '/register',
+    element: <Register />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
