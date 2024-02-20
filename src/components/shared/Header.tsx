@@ -20,7 +20,9 @@ const Header = () => {
           <SearchScreen />
           <LanguageSelector />
           <i className="bi bi-heart"></i>
-          <i className="bi bi-person d-md-block d-none"></i>
+          <a href="/login">
+            <i className="bi bi-person d-md-block d-none"></i>
+          </a>
           <a href="/cart">
             <i className="bi bi-cart"></i>
           </a>
