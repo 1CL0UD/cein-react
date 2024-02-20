@@ -73,6 +73,70 @@ const AboutPage = () => {
         enhanced with modern technologies to ensure optimal results for your
         skin.
       </Quotes>
+      <div className="row">
+        <div className="col-md-6 p-0 d-flex flex-column justify-content-center position-relative">
+          <img
+            src="/img/journal/journal-1.png"
+            alt="Background"
+            className="w-100 h-100 object-fit-cover z-n1"
+            style={{ filter: 'brightness(60%)' }}
+          />
+          <div
+            className="text-white position-absolute top-50 translate-middle"
+            id="about-us-last-content"
+            style={{ left: '45%' }}
+          >
+            <p className="fs-6">Our Credo</p>
+            <h2 className="fs-2">Quality & Efficacy</h2>
+            <div className="col-8">
+              <p className="fs-6">
+                For those serious about skin health, trust someone dedicated
+                since 1986. With over 35 years of crafting certified natural
+                cosmetics, we leverage extensive experience. Our missions to
+                create products beneficial for both body and planet.
+              </p>
+            </div>
+            <div className="col-8">
+              <ButtonWithIcon
+                href={'/shop/skin-care'}
+                dark={true}
+                children={'Our Best Sellers'}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 p-0 d-flex flex-column justify-content-center position-relative">
+          <img
+            src="/img/journal/journal-1.png"
+            alt="Background"
+            className="w-100 h-100 object-fit-cover z-n1"
+            style={{ filter: 'brightness(60%)' }}
+          />
+          <div
+            className="text-white position-absolute top-50 translate-middle"
+            id="about-us-last-content"
+            style={{ left: '45%' }}
+          >
+            <p className="fs-6">Our Credo</p>
+            <h2 className="fs-2">Quality & Efficacy</h2>
+            <div className="col-8">
+              <p className="fs-6">
+                For those serious about skin health, trust someone dedicated
+                since 1986. With over 35 years of crafting certified natural
+                cosmetics, we leverage extensive experience. Our missions to
+                create products beneficial for both body and planet.
+              </p>
+            </div>
+            <div className="col-8">
+              <ButtonWithIcon
+                href={'/shop/skin-care'}
+                dark={true}
+                children={'Our Best Sellers'}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </RootLayout>
   );
 };
