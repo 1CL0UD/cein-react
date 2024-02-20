@@ -73,7 +73,7 @@ const AboutPage = () => {
           skin.
         </Quotes>
         <div className="row">
-          <div className="col-md-6 p-0 d-flex flex-column justify-content-center position-relative">
+          <div className="col-md-6 col-12 p-0 d-flex flex-column justify-content-center position-relative">
             <img
               src="/img/journal/journal-1.png"
               alt="Background"
@@ -83,11 +83,11 @@ const AboutPage = () => {
             <div
               className="text-white position-absolute top-50 translate-middle"
               id="about-us-last-content"
-              style={{ left: '45%' }}
+              style={{ left: '40%' }}
             >
               <p className="fs-6">Our Credo</p>
               <h2 className="fs-2">Quality & Efficacy</h2>
-              <div className="col-8">
+              <div className="col-8 d-md-block d-none">
                 <p className="fs-6">
                   For those serious about skin health, trust someone dedicated
                   since 1986. With over 35 years of crafting certified natural
@@ -95,7 +95,7 @@ const AboutPage = () => {
                   create products beneficial for both body and planet.
                 </p>
               </div>
-              <div className="col-8">
+              <div className="col-md-6 col-12">
                 <ButtonWithIcon
                   href={'/shop/skin-care'}
                   dark={true}
@@ -104,7 +104,7 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 p-0 d-flex flex-column justify-content-center position-relative">
+          <div className="col-md-6 col-12 p-0 d-flex flex-column justify-content-center position-relative">
             <img
               src="/img/journal/journal-1.png"
               alt="Background"
@@ -114,18 +114,18 @@ const AboutPage = () => {
             <div
               className="text-white position-absolute top-50 translate-middle"
               id="about-us-last-content"
-              style={{ left: '45%' }}
+              style={{ left: '40%' }}
             >
               <p className="fs-6">Modern Science, Your Skins's Perfection</p>
               <h2 className="fs-2">High Tech Natural Skin Care</h2>
-              <div className="col-8">
+              <div className="col-8 d-md-block d-none">
                 <p className="fs-6">
                   We build our formulas on nature's most precious raw materials,
                   refined with modern technologies to guarantee the best results
                   for, your skin.
                 </p>
               </div>
-              <div className="col-8">
+              <div className="col-md-6 col-12">
                 <ButtonWithIcon
                   href={'/shop/skin-care'}
                   dark={true}
