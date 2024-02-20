@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './components/shared/Footer';
 import Header from './components/shared/Header';
+import Quotes from './components/shared/Quotes';
 import Snackbar from './components/shared/Snackbar';
 import JournalCard from './components/ui/JournalCard';
 import ProductCard from './components/ui/ProductCard';
@@ -119,13 +120,10 @@ function App() {
           ))}
         </div>
       </section>
-      <section className="container-fluid quotes">
-        <h2 className="fs-2">
-          Countless answers lie within nature's genius, awaiting our exploration
-          and engagement.
-        </h2>
-        <h3 className="fs-3">THE FUTURE OF NATURAL SKINCARE</h3>
-      </section>
+      <Quotes subtext={'THE FUTURE OF NATURAL SKINCARE'}>
+        Countless answers lie within nature's genius, awaiting our exploration
+        and engagement.
+      </Quotes>
       <section className="container-fluid user-voice">
         <h1>User Voice</h1>
         <div className="user-voice-grid">
