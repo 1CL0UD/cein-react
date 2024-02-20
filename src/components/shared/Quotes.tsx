@@ -5,7 +5,7 @@ interface Props {
 
 const Quotes = ({ children, subtext }: Props) => {
   return (
-    <section className="container-fluid quotes">
+    <section className="row d-flex text-center quotes">
       <h2 className="fs-2 mb-4">{children}</h2>
       <h4 className="fs-4 fw-bold text-uppercase">{subtext}</h4>
     </section>
