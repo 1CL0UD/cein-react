@@ -120,10 +120,13 @@ function App() {
           ))}
         </div>
       </section>
-      <Quotes subtext={'THE FUTURE OF NATURAL SKINCARE'}>
-        Countless answers lie within nature's genius, awaiting our exploration
-        and engagement.
-      </Quotes>
+      <section className="container-fluid">
+        <Quotes subtext={'THE FUTURE OF NATURAL SKINCARE'}>
+          Countless answers lie within nature's genius, awaiting our exploration
+          and engagement.
+        </Quotes>
+      </section>
+
       <section className="container-fluid user-voice">
         <h1>User Voice</h1>
         <div className="user-voice-grid">
