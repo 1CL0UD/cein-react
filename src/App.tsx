@@ -121,7 +121,7 @@ function App() {
         </div>
       </section>
       <section className="container-fluid">
-        <Quotes subtext={'THE FUTURE OF NATURAL SKINCARE'}>
+        <Quotes subtext={'THE FUTURE OF NATURAL SKINCARE'} bg={true}>
           Countless answers lie within nature's genius, awaiting our exploration
           and engagement.
         </Quotes>
