@@ -9,6 +9,7 @@ const Footer = () => {
                 src="/img/Logo.svg"
                 alt="Cein"
                 className="mb-4 d-none d-sm-block"
+                style={{ filter: 'invert(1)' }}
               />
               <p>Follow Us</p>
               <div className="d-flex flex-row gap-3">
