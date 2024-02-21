@@ -279,17 +279,16 @@ body {
 }
 
 .quotes {
-  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 8rem;
+  padding: 6rem 8rem;
 }
 
 @media (max-width: 48rem) {
   .quotes {
-    padding: 0 1rem;
+    padding: 4rem 1rem;
   }
 }
 
