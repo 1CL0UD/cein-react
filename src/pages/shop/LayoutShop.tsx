@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import ShopHero from '../../components/shared/ShopHero';
+import HeroWindow from '../../components/shared/HeroWindow';
 import UnderlineTabs from '../../components/shared/UnderlineTabs';
 import RootLayout from '../RootLayout';
 
@@ -19,7 +19,7 @@ const LayoutShop = ({ children }: Props) => {
   ];
   return (
     <RootLayout>
-      <ShopHero />
+      <HeroWindow textStart={true} />
       <div className="container-fluid">
         <UnderlineTabs tabsList={skinCareTabsList} />
       </div>
