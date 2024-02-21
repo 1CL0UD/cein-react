@@ -9,7 +9,7 @@ interface Content {
 }
 const Accordion = ({ transparent, data }: Props) => {
   return (
-    <div className="accordion px-4 py-4" id="accordionComponent">
+    <div className="accordion px-md-4 py-4" id="accordionComponent">
       {data.map((item, index) => (
         <div
           className={`accordion-item border-0 rounded-0 ${
