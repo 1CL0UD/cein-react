@@ -209,12 +209,12 @@ body {
 }
 @media (max-width: 48rem) {
   .carousel .media-scroller {
-    grid-auto-columns: 50%;
+    grid-auto-columns: 33%;
   }
 }
 @media (max-width: 36rem) {
   .carousel .media-scroller {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 50%;
   }
 }
 .carousel .media-scroller--with-groups {
