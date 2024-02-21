@@ -11,6 +11,7 @@ import Register from './pages/authentication/Register.tsx';
 import AboutPage from './pages/about/AboutPage.tsx';
 import BlogListing from './pages/blog/BlogListing.tsx';
 import BlogPost from './pages/blog/BlogPost.tsx';
+import FAQPage from './pages/FAQ/FAQPage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: '/blog/post',
     element: <BlogPost />,
+  },
+  {
+    path: '/faq',
+    element: <FAQPage />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
