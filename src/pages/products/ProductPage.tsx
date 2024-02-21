@@ -8,6 +8,23 @@ import skinCare from '../../data/shop/skin-care';
 
 const ProductPage = () => {
   const products = skinCare.data;
+  const accordionData = [
+    {
+      title: 'Benefits',
+      content:
+        'Pure Micellar Cleansing Water: All in one: make-up removal, cleansing and toning Ideal for removing make-up from eyelash extensions. Suitable for the delicate eye area Cleanses particularly gently, ideal also for sensitive skin Has a toning and moisturizing effect Ideal for quick and deep cleansing of male skin. The multifunctional travel companion Hydrating Eye Cream: Gentle care for the sensitive eye area',
+    },
+    {
+      title: 'How To Use',
+      content:
+        'Pure Micellar Cleansing Water: All in one: make-up removal, cleansing and toning Ideal for removing make-up from eyelash extensions. Suitable for the delicate eye area Cleanses particularly gently, ideal also for sensitive skin Has a toning and moisturizing effect Ideal for quick and deep cleansing of male skin. The multifunctional travel companion Hydrating Eye Cream: Gentle care for the sensitive eye area',
+    },
+    {
+      title: 'Ingredient',
+      content:
+        'Pure Micellar Cleansing Water: All in one: make-up removal, cleansing and toning Ideal for removing make-up from eyelash extensions. Suitable for the delicate eye area Cleanses particularly gently, ideal also for sensitive skin Has a toning and moisturizing effect Ideal for quick and deep cleansing of male skin. The multifunctional travel companion Hydrating Eye Cream: Gentle care for the sensitive eye area',
+    },
+  ];
   return (
     <LayoutProducts>
       <div className="container-fluid">
@@ -53,7 +70,7 @@ const ProductPage = () => {
       <div className="container-fluid p-0">
         <div className="row m-0">
           <div className="col-md-6 row bg-snow-drift">
-            <Accordion />
+            <Accordion transparent={false} data={accordionData} />
           </div>
           <div className="col-md-6 row m-0 p-0">
             <img
