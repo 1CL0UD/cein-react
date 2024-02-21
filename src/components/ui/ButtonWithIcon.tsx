@@ -13,7 +13,7 @@ const ButtonWithIcon = ({ children, dark, href, border }: Props) => {
       className={`btn btn-outline-${
         dark ? 'dark' : 'light'
       } ${darkStyle} py-3 px-4 ${
-        border ? '' : 'border-0 ps-0'
+        border ? '' : 'border-0 ps-1'
       } rounded-0 d-flex justify-content-between`}
     >
       {children}
