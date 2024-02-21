@@ -6,10 +6,10 @@ const JournalCard = () => {
       <h5 className="fs-5 fw-semibold">
         Distinguishing Mineral Sunscreens from Chemical Sunscreens
       </h5>
-      <button className="read-more-btn">
+      <a className="read-more-btn" href="/blog/post">
         Read More
         <i className="bi bi-chevron-right"></i>
-      </button>
+      </a>
     </div>
   );
 };
