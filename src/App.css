@@ -373,3 +373,9 @@ footer {
 .about-us-img {
   padding: 8rem;
 }
+
+@media (max-width: 48rem) {
+  .about-us-img {
+    padding: 4rem;
+  }
+}
