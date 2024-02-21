@@ -19,7 +19,7 @@ const FAQPage = () => {
   ];
   return (
     <RootLayout>
-      <section className="container mt-5">
+      <section className="container px-md-3 px-4 mt-5">
         <div className="row">
           <div className="col-md-4 d-flex flex-column gap-3">
             <h2 className="fs-2">Topics</h2>
