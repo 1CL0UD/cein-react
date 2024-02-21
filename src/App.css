@@ -377,3 +377,13 @@ footer {
     padding: 4rem;
   }
 }
+
+.aspect-ratio-square {
+  aspect-ratio: auto;
+}
+
+@media (max-width: 40rem) {
+  .aspect-ratio-square {
+    aspect-ratio: 1/1;
+  }
+}
