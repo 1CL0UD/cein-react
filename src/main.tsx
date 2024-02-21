@@ -9,6 +9,7 @@ import CartPage from './pages/cart/CartPage.tsx';
 import Login from './pages/authentication/Login.tsx';
 import Register from './pages/authentication/Register.tsx';
 import AboutPage from './pages/about/AboutPage.tsx';
+import BlogListing from './pages/blog/BlogListing.tsx';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <AboutPage />,
+  },
+  {
+    path: '/blog-listing',
+    element: <BlogListing />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
