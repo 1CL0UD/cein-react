@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <RootLayout>
       <div className="container-fluid">
-        <div className="row">
+        <div className="row mb-5">
           <div className="col-md-6 about-us-img d-flex flex-column justify-content-center align-items-center">
             <img
               src="/img/about-us/about-us-1.png"
@@ -14,7 +14,7 @@ const AboutPage = () => {
               className="w-100 h-100"
             />
           </div>
-          <div className="col-md-6 d-flex flex-column justify-content-center pe-5">
+          <div className="col-md-6 d-flex flex-column justify-content-center pe-md-5 ps-md-0 px-4">
             <h3 className="fs-3">Our Story</h3>
             <p className="fs-6">
               Our line features meticulous skin, hair, and body care
@@ -29,7 +29,7 @@ const AboutPage = () => {
               consultants are eager to introduce you to the Aesop range and
               assist with your choices.
             </p>
-            <div className="w-50">
+            <div className="col-md-6 col-12">
               <ButtonWithIcon
                 href={'/journal'}
                 dark={false}
@@ -39,13 +39,13 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-6 d-flex flex-column justify-content-center ps-5">
+        <div className="row mb-5">
+          <div className="col-md-6 d-flex flex-column justify-content-center order-md-0 order-1 ps-md-5 pe-md-0 px-4">
             <h2 className="fs-2">
               Countless solutions have been discovered in nature. We simply need
               to observe and tap into its inherent brilliance.
             </h2>
-            <div className="w-50">
+            <div className="col-md-6 col-12">
               <ButtonWithIcon
                 href={'/shop/skin-care'}
                 dark={false}
@@ -54,7 +54,7 @@ const AboutPage = () => {
               />
             </div>
           </div>
-          <div className="col-md-6 about-us-img d-flex flex-column justify-content-center align-items-center">
+          <div className="col-md-6 about-us-img d-flex flex-column justify-content-center order-md-1 order-0 align-items-center">
             <img
               src="/img/about-us/about-us-1.png"
               alt="Journal Image"
@@ -89,7 +89,7 @@ const AboutPage = () => {
             >
               <p className="fs-6">Our Credo</p>
               <h2 className="fs-2">Quality & Efficacy</h2>
-              <div className="col-8 d-md-block d-none">
+              <div className="col-8 d-lg-block d-none">
                 <p className="fs-6">
                   For those serious about skin health, trust someone dedicated
                   since 1986. With over 35 years of crafting certified natural
@@ -97,7 +97,7 @@ const AboutPage = () => {
                   create products beneficial for both body and planet.
                 </p>
               </div>
-              <div className="col-md-6 col-12">
+              <div className="col-lg-6 col-12">
                 <ButtonWithIcon
                   href={'/shop/skin-care'}
                   dark={true}
@@ -121,14 +121,14 @@ const AboutPage = () => {
             >
               <p className="fs-6">Modern Science, Your Skins's Perfection</p>
               <h2 className="fs-2">High Tech Natural Skin Care</h2>
-              <div className="col-8 d-md-block d-none">
+              <div className="col-8 d-lg-block d-none">
                 <p className="fs-6">
                   We build our formulas on nature's most precious raw materials,
                   refined with modern technologies to guarantee the best results
                   for, your skin.
                 </p>
               </div>
-              <div className="col-md-6 col-12">
+              <div className="col-lg-6 col-12">
                 <ButtonWithIcon
                   href={'/shop/skin-care'}
                   dark={true}
