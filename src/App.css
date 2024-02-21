@@ -280,7 +280,6 @@ body {
 
 .quotes {
   min-height: 60vh;
-  background-color: #e8e8dd;
   display: flex;
   flex-direction: column;
   justify-content: center;
