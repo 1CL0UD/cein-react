@@ -20,27 +20,47 @@ const Footer = () => {
           </div>
           <div className="col-md-8 row d-md-grid d-none order-md-2 order-1">
             <div className="row">
-              <div className="col-3">
-                <h4 className="fs-4">Products</h4>
-                <p>Inner Care</p>
-                <p>Skin Care</p>
-                <p>Calp Care</p>
+              <div className="col-3 d-flex flex-column gap-2">
+                <h4 className="fs-4 mb-1">Products</h4>
+                <a href="#" className="text-secondary">
+                  Inner Care
+                </a>
+                <a href="#" className="text-secondary">
+                  Skin Care
+                </a>
+                <a href="#" className="text-secondary">
+                  Calp Care
+                </a>
               </div>
-              <div className="col-3">
-                <h4 className="fs-4">Guides</h4>
-                <p>News</p>
-                <p>Vision</p>
-                <p>Q&A</p>
+              <div className="col-3 d-flex flex-column gap-2">
+                <h4 className="fs-4 mb-1">Guides</h4>
+                <a href="#" className="text-secondary">
+                  News
+                </a>
+                <a href="#" className="text-secondary">
+                  Vision
+                </a>
+                <a href="/faq" className="text-secondary">
+                  Q&A
+                </a>
               </div>
-              <div className="col-3">
-                <h4 className="fs-4">Service</h4>
-                <p>About Concierge</p>
-                <p>Online Consultation</p>
-                <p>Market</p>
+              <div className="col-3 d-flex flex-column gap-2">
+                <h4 className="fs-4 mb-1">Service</h4>
+                <a href="#" className="text-secondary">
+                  About Concierge
+                </a>
+                <a href="#" className="text-secondary">
+                  Online Consultation
+                </a>
+                <a href="#" className="text-secondary">
+                  Market
+                </a>
               </div>
-              <div className="col-3">
-                <h4 className="fs-4">Contact</h4>
-                <p>Contact Us</p>
+              <div className="col-3 d-flex flex-column gap-2">
+                <h4 className="fs-4 mb-1">Contact</h4>
+                <a href="#" className="text-secondary">
+                  Contact Us
+                </a>
               </div>
             </div>
           </div>
