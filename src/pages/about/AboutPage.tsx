@@ -69,7 +69,12 @@ const AboutPage = () => {
             className="w-100 h-100"
           />
         </div>
-        <Quotes subtext="THE FUTURE OF NATURAL SKINCARE" bg={true}>
+
+        <Quotes
+          subtext="THE FUTURE OF NATURAL SKINCARE"
+          bg={true}
+          smallSubText={false}
+        >
           Our formulations are rooted in nature's most valuable raw materials,
           enhanced with modern technologies to ensure optimal results for your
           skin.
