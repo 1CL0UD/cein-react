@@ -33,6 +33,7 @@ const AboutPage = () => {
               <ButtonWithIcon
                 href={'/journal'}
                 dark={false}
+                border={true}
                 children={'Our Approach To Products'}
               />
             </div>
@@ -48,6 +49,7 @@ const AboutPage = () => {
               <ButtonWithIcon
                 href={'/shop/skin-care'}
                 dark={false}
+                border={true}
                 children={'Discover Products'}
               />
             </div>
@@ -99,6 +101,7 @@ const AboutPage = () => {
                 <ButtonWithIcon
                   href={'/shop/skin-care'}
                   dark={true}
+                  border={true}
                   children={'Our Best Sellers'}
                 />
               </div>
@@ -129,6 +132,7 @@ const AboutPage = () => {
                 <ButtonWithIcon
                   href={'/shop/skin-care'}
                   dark={true}
+                  border={true}
                   children={'Discover More'}
                 />
               </div>

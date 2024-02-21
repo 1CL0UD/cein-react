@@ -34,7 +34,11 @@ const AuthLayout = ({ type }: Props) => {
                   ? 'Login to your existing account here.'
                   : 'With an account, you can save products to your cabinet, view your order history and swiftly checkout using saved details.'}
               </p>
-              <ButtonWithIcon href={type ? '/login' : '/register'} dark={false}>
+              <ButtonWithIcon
+                href={type ? '/login' : '/register'}
+                dark={false}
+                border={true}
+              >
                 {type ? 'Login' : 'Create Account'}
               </ButtonWithIcon>
             </div>
