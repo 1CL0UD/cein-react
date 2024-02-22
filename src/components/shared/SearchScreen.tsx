@@ -13,7 +13,7 @@ const SearchScreen = ({ showSearchScreen, toggleSearchScreen }: Props) => {
         showSearchScreen ? 'd-auto' : 'd-none'
       }`}
     >
-      <div className="row" style={{ maxHeight: '89vh' }}>
+      <div className="row" style={{ minHeight: '89vh' }}>
         <div className="col-md-3 border-2 border-md-end border-secondary">
           <div className="d-flex flex-column px-4 pt-5">
             <form action="">
