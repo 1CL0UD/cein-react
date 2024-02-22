@@ -12,7 +12,7 @@ const PopupModal = () => {
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content bg-transparent border-0">
           <div className="modal-body">
-            <div className="d-flex flex-column">
+            <div className="container-fluid">
               <div className="row">
                 <div className="col-md-6 py-3 bg-snow-drift order-md-0 order-1">
                   <h1 className="fs-1">A Gift Is Waiting For You</h1>
@@ -25,7 +25,7 @@ const PopupModal = () => {
                       <input
                         type="text"
                         className="form-control bg-white p-3
-                         rounded-0 border-2 border-dark"
+                             rounded-0 border-2 border-dark"
                         placeholder="Your Email"
                         aria-label="Your Email"
                         aria-describedby="email-input"
