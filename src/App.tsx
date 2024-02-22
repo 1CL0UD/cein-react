@@ -41,8 +41,8 @@ function App() {
           </div>
         </section>
         <section className="container-fluid product-highlight">
-          <div className="col-md row m-auto py-4">
-            <div className="row col-md-6 my-auto">
+          <div className="row m-auto py-4">
+            <div className="col-md-6 p-md-5 p-3 my-auto">
               <img
                 src="/img/skin-care.png"
                 alt=""
@@ -135,7 +135,7 @@ function App() {
         </section>
         <section className="container-fluid user-voice">
           <h1>User Voice</h1>
-          <div className="user-voice-grid">
+          <div className="user-voice-grid gap-md-3 gap-1">
             <img src="/img/hero-2.png" alt="" />
             <img src="/img/user-voice/Ig.png" alt="" />
             <img src="/img/user-voice/Ig.png" alt="" />
