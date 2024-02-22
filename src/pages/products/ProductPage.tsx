@@ -74,6 +74,7 @@ const ProductPage = () => {
               transparent={false}
               data={accordionData}
               hrefContent={false}
+              darkBg={false}
             />
           </div>
           <div className="col-md-6 row m-0 p-0">

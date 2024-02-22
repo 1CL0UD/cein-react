@@ -49,6 +49,7 @@ const FAQPage = () => {
               transparent={true}
               data={accordionData}
               hrefContent={false}
+              darkBg={false}
             />
             <div className="row my-5">
               <h2 className="fs-2">
