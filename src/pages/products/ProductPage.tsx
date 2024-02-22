@@ -5,6 +5,9 @@ import ProductCard from '../../components/ui/ProductCard';
 import ProductDescription from '../../components/ui/ProductDescription';
 import LayoutProducts from './LayoutProducts';
 import skinCare from '../../data/shop/skin-care';
+import ButtonWithIcon from '../../components/ui/ButtonWithIcon';
+import Rating from '../../components/ui/Rating';
+import ProgressBar from '../../components/ui/ProgressBar';
 
 const ProductPage = () => {
   const products = skinCare.data;
@@ -90,7 +93,54 @@ const ProductPage = () => {
       </div>
       <div className="container-fluid py-5">
         <div className="row">
-          <div className="col-md-6">Reviews</div>
+          <div className="col-md-6 d-flex flex-column gap-2 px-4">
+            <p className="fs-6 text-secondary">Reviews</p>
+            <div className="d-flex flex-row gap-2 align-items-center mb-2">
+              <h2 className="fs-2 mb-0">5/5</h2>
+              <Rating ratings={5} />
+            </div>
+            <p className="fs-6">
+              This product has been reviewed by 12 customers
+            </p>
+            <div className="col-8">
+              <div className="d-flex align-items-center gap-2">
+                <Rating ratings={5} />
+                <ProgressBar progress={95} showNumber={true} />
+              </div>
+            </div>
+            <div className="col-8">
+              <div className="d-flex align-items-center gap-2">
+                <Rating ratings={4} />
+                <ProgressBar progress={62} showNumber={true} />
+              </div>
+            </div>
+            <div className="col-8">
+              <div className="d-flex align-items-center gap-2">
+                <Rating ratings={3} />
+                <ProgressBar progress={13} showNumber={true} />
+              </div>
+            </div>
+            <div className="col-8">
+              <div className="d-flex align-items-center gap-2">
+                <Rating ratings={2} />
+                <ProgressBar progress={5} showNumber={true} />
+              </div>
+            </div>
+            <div className="col-8 mb-4">
+              <div className="d-flex align-items-center gap-2">
+                <Rating ratings={1} />
+                <ProgressBar progress={2} showNumber={true} />
+              </div>
+            </div>
+            <div className="col-4">
+              <ButtonWithIcon
+                href={'#'}
+                dark={false}
+                border={true}
+                children={'Write a review'}
+              />
+            </div>
+          </div>
           <div className="col-md-6">
             <Comments />
             <Comments />
