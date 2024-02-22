@@ -149,7 +149,6 @@ body {
   min-height: 100vh;
   display: grid;
   gap: 8rem;
-  padding: 0 4rem;
 }
 .product-highlight img {
   margin: auto 0;
@@ -184,7 +183,7 @@ body {
 
 .carousel {
   min-height: 100vh;
-  padding: 4rem;
+  padding: 2rem;
 }
 .carousel ::-webkit-scrollbar {
   width: 0px;
@@ -311,7 +310,7 @@ body {
 .user-voice-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 0rem;
   margin: 2rem 0 3rem 0;
 }
 .user-voice-grid img {
