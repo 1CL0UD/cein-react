@@ -9,12 +9,12 @@ const PopupModal = () => {
       aria-labelledby="popupModalLabel"
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-dialog-centered">
+      <div className="modal-dialog modal-lg modal-dialog-centered">
         <div className="modal-content bg-transparent border-0">
           <div className="modal-body">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-md-6 py-3 bg-snow-drift order-md-0 order-1">
+                <div className="col-md-6 p-5 py-3 bg-snow-drift order-md-0 order-1">
                   <h1 className="fs-1">A Gift Is Waiting For You</h1>
                   <p className="fs-6">
                     Sign up for our newsletter and get a free travel size worth
