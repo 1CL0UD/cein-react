@@ -29,14 +29,14 @@ const ProductPage = () => {
     <LayoutProducts>
       <div className="container-fluid">
         <div className="row min-vh-100">
-          <div className="col-md-8 row px-0">
+          <div className="col-md-8 px-0">
             <img
               src="/img/products/product-1.png"
               className="object-fit-contain w-100 p-0"
               alt="Product Name"
             />
           </div>
-          <div className="col-md-4 p-4 row m-auto">
+          <div className="col-md-4 p-4 m-auto">
             <div className="d-flex flex-row">
               <p className="fs-6">Skin Care</p>
               <i className="bi bi-dot"></i>
@@ -69,7 +69,7 @@ const ProductPage = () => {
       </div>
       <div className="container-fluid p-0">
         <div className="row m-0">
-          <div className="col-md-6 row bg-snow-drift">
+          <div className="col-md-6 bg-snow-drift">
             <Accordion
               transparent={false}
               data={accordionData}
@@ -77,7 +77,7 @@ const ProductPage = () => {
               darkBg={false}
             />
           </div>
-          <div className="col-md-6 row m-0 p-0">
+          <div className="col-md-6 m-0 p-0">
             <img
               src="/img/products/product-acc.png"
               className="object-fit-cover w-100 p-0"
