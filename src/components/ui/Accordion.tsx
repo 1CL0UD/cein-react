@@ -1,15 +1,24 @@
+import React from 'react';
+
 interface Props {
   transparent: boolean;
   data: Content[];
   hrefContent: boolean;
   darkBg: boolean;
+  showStores?: () => void;
 }
 
 interface Content {
   title: string;
   content: string | string[];
 }
-const Accordion = ({ transparent, data, hrefContent, darkBg }: Props) => {
+const Accordion = ({
+  transparent,
+  data,
+  hrefContent,
+  darkBg,
+  showStores,
+}: Props) => {
   return (
     <div className="accordion px-md-4 py-4 w-100" id="accordionComponent">
       {data.map((item, index) => (
@@ -45,13 +54,20 @@ const Accordion = ({ transparent, data, hrefContent, darkBg }: Props) => {
                 <div className="accordion-body d-flex flex-column gap-2">
                   {Array.isArray(item.content) ? (
                     item.content.map((contentItem, contentIndex) => (
-                      <a
-                        key={contentIndex}
-                        href={`/${contentItem.toLowerCase()}`}
-                        className="nav-link"
-                      >
-                        {contentItem}
-                      </a>
+                      <div key={contentIndex}>
+                        {contentItem.toLowerCase() === 'stores' ? (
+                          <button className="nav-link" onClick={showStores}>
+                            {contentItem}
+                          </button>
+                        ) : (
+                          <a
+                            href={`/${contentItem.toLowerCase()}`}
+                            className="nav-link"
+                          >
+                            {contentItem}
+                          </a>
+                        )}
+                      </div>
                     ))
                   ) : (
                     <a href="#" className="nav-link">
