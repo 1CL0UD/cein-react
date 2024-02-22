@@ -1,9 +1,20 @@
+import Accordion from '../ui/Accordion';
+
 const Footer = () => {
+  const footerData = [
+    { title: 'Products', content: ['Inner Care', 'Skin Care', 'Calp Care'] },
+    { title: 'Guides', content: ['News', 'Vision', 'Q&A'] },
+    {
+      title: 'Service',
+      content: ['About Concierge', 'Online Consultation', 'Market'],
+    },
+    { title: 'Contacts', content: ['Contact Us'] },
+  ];
   return (
     <footer>
       <div className="container-fluid">
         <div className="row mb-4">
-          <div className="col-md-4 row order-md-1 order-2">
+          <div className="col-md-4 order-md-1 order-2">
             <div className="footer-social">
               <img
                 src="/img/Logo.svg"
@@ -66,126 +77,16 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-8 d-md-none d-grid order-md-2 mb-4 order-1">
-            <div className="accordion" id="accordionFooter">
-              <div className="accordion-item bg-transparent rounded-0 border-0 text-light">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button bg-transparent rounded-0 border-0 text-light"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne"
-                  >
-                    Products
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseOne"
-                  className="accordion-collapse collapse show"
-                >
-                  <div className="accordion-body d-flex flex-column gap-2">
-                    <a href="#" className="nav-link">
-                      Inner Care
-                    </a>
-                    <a href="#" className="nav-link">
-                      Skin Care
-                    </a>
-                    <a href="#" className="nav-link">
-                      Calp Care
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item bg-transparent rounded-0 border-0 text-light">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button bg-transparent rounded-0 border-0 text-light collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo"
-                  >
-                    Guides
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseTwo"
-                  className="accordion-collapse collapse"
-                >
-                  <div className="accordion-body d-flex flex-column gap-2">
-                    <a href="#" className="nav-link">
-                      News
-                    </a>
-                    <a href="#" className="nav-link">
-                      Vision
-                    </a>
-                    <a href="#" className="nav-link">
-                      Q&A
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item bg-transparent rounded-0 border-0 text-light">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button bg-transparent rounded-0 border-0 text-light collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree"
-                  >
-                    Service
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseThree"
-                  className="accordion-collapse collapse"
-                >
-                  <div className="accordion-body d-flex flex-column gap-2">
-                    <a href="#" className="nav-link">
-                      About Concierge
-                    </a>
-                    <a href="#" className="nav-link">
-                      Online Consultation
-                    </a>
-                    <a href="#" className="nav-link">
-                      Market
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item bg-transparent rounded-0 border-0 text-light">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button bg-transparent text-light collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseFour"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseFour"
-                  >
-                    Contacts
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseFour"
-                  className="accordion-collapse collapse"
-                >
-                  <div className="accordion-body d-flex flex-column gap-2">
-                    <a href="#" className="nav-link">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Accordion
+              transparent={true}
+              data={footerData}
+              hrefContent={true}
+              darkBg={true}
+            />
           </div>
         </div>
         <div className="row mt-4 text-secondary">
-          <div className="col-md-4 row order-2 order-md-1">
+          <div className="col-md-4 order-2 order-md-1">
             <small>CEIN. 2019 KINS All rights reserved.</small>
           </div>
           <div className="col-md-8 order-1 order-md-2 mb-4">
