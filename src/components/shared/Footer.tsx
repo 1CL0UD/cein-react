@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-8 row d-md-grid d-none order-md-2 order-1">
+          <div className="col-md-8 d-md-grid d-none order-md-2 order-1">
             <div className="row">
               <div className="col-3 d-flex flex-column gap-2">
                 <h4 className="fs-4 mb-1">Products</h4>
@@ -65,15 +65,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-8 row d-md-none d-grid order-md-2 mb-4 order-1">
-            <div
-              className="accordion border-0"
-              id="accordionPanelsStayOpenExample"
-            >
-              <div className="accordion-item bg-dark text-light">
+          <div className="col-md-8 d-md-none d-grid order-md-2 mb-4 order-1">
+            <div className="accordion" id="accordionFooter">
+              <div className="accordion-item bg-transparent rounded-0 border-0 text-light">
                 <h2 className="accordion-header">
                   <button
-                    className="accordion-button bg-dark text-light"
+                    className="accordion-button bg-transparent rounded-0 border-0 text-light"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseOne"
@@ -100,10 +97,10 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="accordion-item bg-dark text-light">
+              <div className="accordion-item bg-transparent rounded-0 border-0 text-light">
                 <h2 className="accordion-header">
                   <button
-                    className="accordion-button bg-dark text-light collapsed"
+                    className="accordion-button bg-transparent rounded-0 border-0 text-light collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseTwo"
@@ -130,10 +127,10 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="accordion-item bg-dark text-light">
+              <div className="accordion-item bg-transparent rounded-0 border-0 text-light">
                 <h2 className="accordion-header">
                   <button
-                    className="accordion-button bg-dark text-light collapsed"
+                    className="accordion-button bg-transparent rounded-0 border-0 text-light collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseThree"
@@ -160,10 +157,10 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="accordion-item bg-dark text-light">
+              <div className="accordion-item bg-transparent rounded-0 border-0 text-light">
                 <h2 className="accordion-header">
                   <button
-                    className="accordion-button bg-dark text-light collapsed"
+                    className="accordion-button bg-transparent text-light collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseFour"
