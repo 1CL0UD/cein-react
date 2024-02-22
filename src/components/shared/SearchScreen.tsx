@@ -14,7 +14,7 @@ const SearchScreen = ({ showSearchScreen, toggleSearchScreen }: Props) => {
       }`}
     >
       <div className="row" style={{ minHeight: '89vh' }}>
-        <div className="col-md-3 border-2 border-md-end border-secondary">
+        <div className="col-md-3 border-2 border-md-0 border-end border-secondary">
           <div className="d-flex flex-column px-4 pt-5">
             <form action="">
               <div className="input-group mb-3">
