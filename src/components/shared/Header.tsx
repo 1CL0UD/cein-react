@@ -3,15 +3,37 @@ import LanguageSelector from '../ui/LanguageSelector';
 import SearchScreen from './SearchScreen';
 import NavDropdown from './NavDropdown';
 import MobileNav from './MobileNav';
+import StoreScreen from './StoreScreen';
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showSearchScreen, setShowSearchScreen] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
-  const toggleDropdown = () => setShowDropdown((prevState) => !prevState);
-  const toggleSearchScreen = () =>
+  const [showStores, setShowStores] = useState(false);
+  const toggleDropdown = () => {
+    setShowSearchScreen(false);
+    setShowMobileNav(false);
+    setShowStores(false);
+    setShowDropdown((prevState) => !prevState);
+  };
+  const toggleSearchScreen = () => {
+    setShowDropdown(false);
+    setShowMobileNav(false);
+    setShowStores(false);
     setShowSearchScreen((prevState) => !prevState);
-  const toggleMobileNav = () => setShowMobileNav((prevState) => !prevState);
+  };
+  const toggleMobileNav = () => {
+    setShowDropdown(false);
+    setShowSearchScreen(false);
+    setShowStores(false);
+    setShowMobileNav((prevState) => !prevState);
+  };
+  const toggleStores = () => {
+    setShowDropdown(false);
+    setShowSearchScreen(false);
+    setShowMobileNav(false);
+    setShowStores((prevState) => !prevState);
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg shadow bg-body-tertiary px-3 py-0">
@@ -35,9 +57,9 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <button className="nav-link" onClick={toggleStores}>
                   Stores
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -85,7 +107,8 @@ const Header = () => {
         showSearchScreen={showSearchScreen}
         toggleSearchScreen={toggleSearchScreen}
       />
-      <MobileNav showMobileNav={showMobileNav} />
+      <MobileNav showMobileNav={showMobileNav} toggleStores={toggleStores} />
+      <StoreScreen showStores={showStores} />
     </>
   );
 };
