@@ -5,9 +5,10 @@ import NavDropdown from './NavDropdown';
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  const toggleDropdown = () => {
-    setShowDropdown((prevState) => !prevState);
-  };
+  const [showSearchScreen, setShowSearchScreen] = useState(false);
+  const toggleDropdown = () => setShowDropdown((prevState) => !prevState);
+  const toggleSearchScreen = () =>
+    setShowSearchScreen((prevState) => !prevState);
   return (
     <>
       <nav className="navbar navbar-expand-lg shadow bg-body-tertiary px-3 py-0">
@@ -49,13 +50,11 @@ const Header = () => {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <button
-              type="button"
-              className="btn border-0 p-0"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i className="bi bi-search d-md-none d-block"></i>
+            <button type="button" className="btn border-0 p-0">
+              <i
+                className="bi bi-search d-md-none d-block"
+                onClick={toggleSearchScreen}
+              ></i>
             </button>
           </div>
           <a className="navbar-brand m-0" href="/">
@@ -65,13 +64,10 @@ const Header = () => {
             <button
               type="button"
               className="btn border-0 p-0"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
+              onClick={toggleSearchScreen}
             >
               <i className="bi bi-search d-md-block d-none"></i>
             </button>
-
-            <SearchScreen />
             <LanguageSelector />
             <i className="bi bi-heart"></i>
             <a href="/login">
@@ -84,6 +80,7 @@ const Header = () => {
         </div>
       </nav>
       <NavDropdown showDropdown={showDropdown} />
+      <SearchScreen showSearchScreen={showSearchScreen} />
     </>
   );
 };
