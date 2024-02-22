@@ -23,11 +23,11 @@ const ProductCard = ({
       key={id}
     >
       <img src={image_link} alt="product-1" />
-      <p className="product-name">{name}</p>
+      <p className="product-name mb-0">{name}</p>
       <i className="bi bi-heart text-end"></i>
-      <p>A Vitamin C-rich layering serum</p>
-      <p>{capacity}</p>
-      <p>
+      <p className="fs-6 mb-0">A Vitamin C-rich layering serum</p>
+      <p className="fs-6 mb-0">{capacity}</p>
+      <p className="fs-6 mb-0">
         {price_sign}
         {price}
       </p>
