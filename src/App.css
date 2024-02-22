@@ -185,6 +185,10 @@ body {
   min-height: 100vh;
   padding: 2rem;
 }
+
+#searchResult > .carousel ::-webkit-scrollbar {
+  display: none;
+}
 .carousel ::-webkit-scrollbar {
   width: 0px;
 }
