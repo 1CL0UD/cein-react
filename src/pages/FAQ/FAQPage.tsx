@@ -45,7 +45,11 @@ const FAQPage = () => {
             </div>
           </div>
           <div className="col-md-8">
-            <Accordion transparent={true} data={accordionData} />
+            <Accordion
+              transparent={true}
+              data={accordionData}
+              hrefContent={false}
+            />
             <div className="row my-5">
               <h2 className="fs-2">
                 Cannot find what you are looking for? We warmly invite you to
