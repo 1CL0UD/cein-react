@@ -2,13 +2,16 @@ import { useState } from 'react';
 import LanguageSelector from '../ui/LanguageSelector';
 import SearchScreen from './SearchScreen';
 import NavDropdown from './NavDropdown';
+import MobileNav from './MobileNav';
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showSearchScreen, setShowSearchScreen] = useState(false);
+  const [showMobileNav, setShowMobileNav] = useState(false);
   const toggleDropdown = () => setShowDropdown((prevState) => !prevState);
   const toggleSearchScreen = () =>
     setShowSearchScreen((prevState) => !prevState);
+  const toggleMobileNav = () => setShowMobileNav((prevState) => !prevState);
   return (
     <>
       <nav className="navbar navbar-expand-lg shadow bg-body-tertiary px-3 py-0">
@@ -40,16 +43,13 @@ const Header = () => {
           </div>
           <div className="d-flex flex-row d-lg-none d-block align-items-center gap-sm-4 gap-3">
             <button
-              className="navbar-toggler"
+              className="navbar-toggler border-0"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              onClick={toggleMobileNav}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
+
             <button type="button" className="btn border-0 p-0">
               <i
                 className="bi bi-search d-md-none d-block"
@@ -57,6 +57,7 @@ const Header = () => {
               ></i>
             </button>
           </div>
+
           <a className="navbar-brand m-0" href="/">
             <img src="/img/Logo.svg" alt="Cein" width="80" height="64" />
           </a>
@@ -84,6 +85,7 @@ const Header = () => {
         showSearchScreen={showSearchScreen}
         toggleSearchScreen={toggleSearchScreen}
       />
+      <MobileNav showMobileNav={showMobileNav} />
     </>
   );
 };
