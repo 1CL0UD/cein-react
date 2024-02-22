@@ -4,6 +4,8 @@ import Header from './components/shared/Header';
 import Quotes from './components/shared/Quotes';
 import Snackbar from './components/shared/Snackbar';
 import JournalCard from './components/ui/JournalCard';
+import PopupComment from './components/ui/PopupComment';
+import PopupModal from './components/ui/PopupModal';
 import ProductCard from './components/ui/ProductCard';
 import skinCare from './data/shop/skin-care';
 // import Carousel from './components/ui/Carousel';
@@ -22,11 +24,28 @@ function App() {
     <>
       <Snackbar
         text="Click and Collect is now available. Complimentary shipping over $400."
-        show={false}
+        show={true}
       />
       <Header />
       {/* <Carousel image={heroContent} /> */}
-
+      {/* <button
+        type="button"
+        className="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#popupModal"
+      >
+        Launch newsletter modal
+      </button>
+      <button
+        type="button"
+        className="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#commentModal"
+      >
+        Launch comment modal
+      </button> */}
+      <PopupModal />
+      <PopupComment />
       <section className="container-fluid hero hero-top">
         <div className="hero-content">
           <small>Treat Your Body Like Your Face</small>
@@ -151,7 +170,6 @@ function App() {
         <h1>Our Journal</h1>
         <div className="media-scroller snaps-inline">{journal}</div>
       </section>
-
       <Footer />
     </>
   );
