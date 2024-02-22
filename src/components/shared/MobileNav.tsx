@@ -2,8 +2,9 @@ import Accordion from '../ui/Accordion';
 
 interface Props {
   showMobileNav: boolean;
+  toggleStores: () => void;
 }
-const MobileNav = ({ showMobileNav }: Props) => {
+const MobileNav = ({ showMobileNav, toggleStores }: Props) => {
   const navItems = [
     {
       title: 'Products',
@@ -41,6 +42,7 @@ const MobileNav = ({ showMobileNav }: Props) => {
             data={navItems}
             hrefContent={true}
             darkBg={false}
+            showStores={toggleStores}
           />
         </div>
         <div className="d-flex flex-column gap-2 px-3">
