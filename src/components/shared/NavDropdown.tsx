@@ -9,7 +9,7 @@ const NavDropdown = ({ showDropdown }: Props) => {
       }`}
     >
       <div className="row" style={{ height: '89vh' }}>
-        <div className="col-9">
+        <div className="col-md-9">
           <div className="row p-5">
             <div className="col">
               <h5 className="fs-5 fw-semibold">Category</h5>
@@ -105,7 +105,7 @@ const NavDropdown = ({ showDropdown }: Props) => {
             </div>
           </div>
         </div>
-        <div className="col-3 flex-grow-1 h-100">
+        <div className="col-3 d-md-block d-none">
           <img
             src="/img/products/product-1.png"
             alt="Product Image"
