@@ -11,7 +11,7 @@ interface Content {
 }
 const Accordion = ({ transparent, data, hrefContent, darkBg }: Props) => {
   return (
-    <div className="accordion px-md-4 py-4" id="accordionComponent">
+    <div className="accordion px-md-4 py-4 w-100" id="accordionComponent">
       {data.map((item, index) => (
         <div
           className={`accordion-item border-0 rounded-0 ${
@@ -23,7 +23,7 @@ const Accordion = ({ transparent, data, hrefContent, darkBg }: Props) => {
             <button
               className={`accordion-button collapsed ${
                 transparent ? 'bg-transparent' : 'bg-snow-drift'
-              } ${darkBg ? 'text-light' : 'text-dark'} rounded-0`}
+              } ${darkBg ? 'text-light' : 'text-dark'} rounded-0 fw-semibold`}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target={`#collapse${index}`}
@@ -41,11 +41,15 @@ const Accordion = ({ transparent, data, hrefContent, darkBg }: Props) => {
             data-bs-parent="#accordionComponent"
           >
             {hrefContent && item.content.length > 0 ? (
-              <div className="accordion-body d-flex flex-column gap-2">
+              <div className="accordion-body p-0 d-flex flex-column gap-2">
                 <div className="accordion-body d-flex flex-column gap-2">
                   {Array.isArray(item.content) ? (
                     item.content.map((contentItem, contentIndex) => (
-                      <a key={contentIndex} href="#" className="nav-link">
+                      <a
+                        key={contentIndex}
+                        href={`/${contentItem.toLowerCase()}`}
+                        className="nav-link"
+                      >
                         {contentItem}
                       </a>
                     ))
