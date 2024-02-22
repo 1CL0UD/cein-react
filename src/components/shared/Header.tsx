@@ -80,7 +80,10 @@ const Header = () => {
         </div>
       </nav>
       <NavDropdown showDropdown={showDropdown} />
-      <SearchScreen showSearchScreen={showSearchScreen} />
+      <SearchScreen
+        showSearchScreen={showSearchScreen}
+        toggleSearchScreen={toggleSearchScreen}
+      />
     </>
   );
 };
