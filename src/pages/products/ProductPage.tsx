@@ -60,6 +60,8 @@ const ProductPage = () => {
               style={{ height: '3px' }}
             ></div>
             <ProductDescription />
+            <ProductDescription />
+            <ProductDescription />
           </div>
         </div>
         <div className="row text-center py-5">
